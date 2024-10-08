@@ -1,12 +1,14 @@
+import Link from 'next/link';
 import styles from './SiteHeader.module.scss';
 
-export default function SiteHeader() {
+export default function SiteHeader(props) {
   return (
     <header>
-      <div className={styles.navArea}>
-        {' '}
-        <div>Logo</div> <div>Cart</div>
-      </div>
+      <nav className={styles.navArea}>
+        <Link href="/">Logo</Link>
+        <Link href="/">Products</Link>
+        <Link href="/Cart">Cart {props.count}</Link>
+      </nav>
     </header>
   );
 }

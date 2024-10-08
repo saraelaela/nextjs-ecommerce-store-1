@@ -1,5 +1,6 @@
 .page {
   margin: 0 auto;
+  max-width: 100vw;
 }
 .productContainer {
   display: flex;

@@ -1,8 +1,23 @@
-.container {
-  margin: 0 auto;
-  padding: 0 0 5vw 0vw;
+.wrapper {
+  max-width: 50vw;
+  max-height: 50vw;
+  padding-bottom: 5rem;
+
+  h1,
+  p {
+    padding: 2rem 10rem 2rem 2rem;
+  }
 }
 
-.productImage {
-  max-width: 40vw;
+.imageContainer {
+  display: flex;
+  // align-items: bottom;
+  justify-content: center;
+  max-height: 30vw;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+    // align-items: center;
+  }
 }
